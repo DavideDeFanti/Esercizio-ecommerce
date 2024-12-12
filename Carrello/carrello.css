@@ -1,0 +1,280 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+/* Inzio stile header */
+header {
+    margin-bottom: 100px;
+    max-width: 100%;
+}
+
+.help ul {
+    margin-top: 0;
+    list-style: none;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: end;
+}
+
+.help li {
+    margin: 5px;
+    border-right: 1px solid black;
+    padding-right: 5px;
+}
+
+.help ul:last-child {
+    margin: 0 50px;
+}
+
+.help a {
+    color: black;
+    text-decoration: none;
+    font-size: .8em;
+    margin: 5px;
+
+}
+
+.help a:hover {
+    color: rgba(0, 0, 0, 0.425);
+}
+
+.logo a {
+    margin-left: 50px;
+}
+
+.midNav {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row nowrap;
+    background-color: rgba(231, 227, 227, 0.205);
+    /* margin: 5px 50px; */
+
+}
+
+.mainMenu ul {
+    list-style: none;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: end;
+}
+
+.mainMenu a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 5px;
+    padding: 0 10px;
+}
+
+.mainMenu a:hover {
+    text-decoration: underline;
+}
+
+.iconSection ul {
+    display: flex;
+    justify-content: end;
+    flex-flow: row nowrap;
+    list-style: none;
+    margin-right: 50px;
+}
+
+.iconSection a {
+    color: black;
+    text-decoration: none;
+    margin: 0 5px;
+    padding: 0 10px;
+
+}
+
+/* Fine stile header */
+
+
+
+/* Stile main container  */
+.mainContainer {
+    /* border: 1px solid red; */
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+
+.banner {
+    margin-top: 50px;
+    border: 1px solid rgba(170, 170, 170, 0.342);
+}
+
+.banner h3 {
+    color: #FF6200;
+}
+
+.banner p,
+a {
+    color: grey;
+}
+
+
+.banner a:hover {
+    color: rgba(0, 0, 0, 0.425);
+}
+
+.carrello {
+
+    max-width: 40%;
+    margin: 5px 0;
+}
+
+.shoesCard {
+    display: flex;
+    border-bottom: 1px solid rgba(170, 170, 170, 0.342);
+    /* border: 1px solid red; */
+    margin-top: 20px;
+}
+
+.shoesImg {
+    max-width: 25%;
+    margin-right: 20px;
+}
+
+.shoesImg img {
+    max-width: 100%;
+
+}
+
+.shoesImg p {
+    color: black;
+    font-size: .8em;
+    font-weight: bold;
+}
+
+.shoesImg a {
+    color: black;
+}
+
+.spanTitolo {
+    font-weight: bold;
+    /* margin-right: 500px; */
+}
+
+.spanPrezzo {
+    font-weight: bold;
+    /* border: 1px solid red; */
+}
+
+label,
+select {
+    color: grey;
+}
+
+select {
+    border: none;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.iconCarrello ul {
+    display: flex;
+    flex-flow: row nowrap;
+    list-style: none;
+    /* border: 1px solid red; */
+    justify-content: flex-start;
+    padding: 0;
+}
+
+.iconCarrello ul li {
+    margin: 0 10px;
+
+}
+
+/* Stile main container  */
+
+
+
+.riepilogo {
+    /* border: 1px solid red; */
+    width: 15%;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+.riepilogoSub span {
+    margin-left: 120px;
+}
+
+.riepilogoIva span {
+    margin-left: 200px;
+}
+
+.riepilogoTot {
+    margin-top: 50px;
+    padding: 10px 0;
+    border-top: 1px solid rgba(170, 170, 170, 0.342);
+    border-bottom: 1px solid rgba(170, 170, 170, 0.342);
+}
+
+.riepilogoTot span {
+    margin-left: 145px;
+}
+
+.btnPagamento {
+    background-color: black;
+    font-weight: bold;
+    width: 100%;
+    height: 50px;
+    border-radius: 30px;
+    margin: 50px 0px;
+    border: 0.2px solid rgba(0, 0, 0, 0.288);
+    cursor: pointer;
+}
+
+.btnPagamento a {
+    color: white;
+    text-decoration: none;
+}
+
+.btnPagamento:hover {
+    background-color: rgba(0, 0, 0, 0.726);
+}
+
+/* Inizio stile Footer */
+.footerHelp {
+    background-color: rgba(231, 227, 227, 0.205);
+}
+
+.footerHelp p {
+    font-size: .8em;
+    text-align: center;
+}
+
+.footerHelp ul {
+    margin-bottom: 0;
+    list-style: none;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+
+}
+
+.footerHelp li {
+    margin: 0 5px;
+    border-right: 1px solid black;
+    padding-right: 5px;
+}
+
+.footerHelp a {
+    color: black;
+    text-decoration: none;
+    font-size: .8em;
+    margin: 5px;
+}
+
+.footerHelp a:hover {
+    color: rgba(0, 0, 0, 0.425);
+}
+
+/* Fine stile Footer */

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LabAir | Just Training</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="checkout.css">
+    <link rel="icon" type="image/x-icon" href="immagini/logoLab.png">
+    <script src="checkout.js" defer></script>
+</head>
+
+<body>
+    <div class="titolo">
+        <h1>Pagamento</h1>
+    </div>
+    <div class="mainContainer">
+        <!-- Gestione form  -->
+        <div class="formContainer">
+            <!-- form primo step  -->
+            <div class="primoStep">
+                <div class="sottoTitolo">
+                    <h3>Opzioni di consegna</h3>
+                </div>
+                <div class="tipoSpedizione">
+                    <button class="spedizione" type="button">
+                        <img src="icone/shipped.png" alt="iconaSpedizone"><span>Spedizione</span>
+                    </button>
+                    <button class="spedizione" type="button">
+                        <img src="icone/placeholder.png" alt="iconaSpedizone"><span>Ritiro</span>
+                    </button>
+                </div>
+                <form id="form1" action="#" method="post">
+                    <div class="nomeEcognome">
+                        <input type="text" name="nome" id="nome" placeholder="Nome*">
+                        <input type="text" name="cognome" id="cognome" placeholder="Cognome*">
+                    </div>
+                    <input type="text" name="indirizzo" id="indirizzo" placeholder="Indirizzo*">
+                    <div class="CapCitta">
+                        <input type="text" name="cap" id="cap" placeholder="CAP*">
+                        <input type="text" name="citta" id="citta" placeholder="Città*">
+                        <input type="text" name="paese" id="paese" placeholder="Italia" disabled>
+                    </div>
+                    <div class="mailTel">
+                        <input type="email" name="email" id="email" placeholder="E-mail*">
+                        <input type="tel" name="telefono" id="telefono" placeholder="Numero di telefono*">
+                    </div>
+                    <div class="button1">
+                        <button id="submit1" type="submit" disabled>Salva e continua</button>
+                    </div>
+                </form>
+            </div>
+            <!-- form primo step  -->
+
+            <!-- form secondo step  -->
+            <div class="secondoStep">
+                <div class="Sottotitolo">
+                    <h3>Opzioni di Pagamento</h3>
+                </div>
+                <div class="paeseFt">
+                    <p>Paese/regione di fatturazione: <strong>Italia</strong></p>
+                </div>
+                <form id="form2" action="#" method="post">
+                    <div class="voucher"><input type="checkbox" name="voucher" id="voucher">
+                        <label for="voucher">Possiedi una gift card, un voucher prodotto o un codice promozionale?
+                        </label>
+                    </div>
+                    <h4>Selezione metodo di pagamento</h4>
+                    <div class="metodoPagamento">
+                        <input type="radio" name="pagamento" id="carta" checked>
+                        <label for="carta"><img src="icone/credit-card.png" alt="cartaDiCredito"> Carta di credito o
+                            debito</label>
+                        <br>
+                        <input type="radio" name="pagamento" id="paypal">
+                        <label for="paypal"><img src="icone/paypal.png" alt="cartaDiCredito"> PayPal</label>
+                    </div>
+                    <h4>Aggiungi Carta</h4>
+                    <div class="infoCarta">
+                        <input type="text" name="numeroCarta" id="numeroCarta" placeholder="Numero Carta">
+                        <input type="month" name="data" id="data">
+                        <input type="text" name="cvv" id="cvv" placeholder="CVV">
+                    </div>
+                    <div class="button2">
+                        <button id="submit2" type="submit">Paga ora</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- Gestione form  -->
+
+        <!-- inizio riepilogo  -->
+        <div class="carrello">
+            <div class="riepilogo">
+                <div class="titoloRiepilogo">
+                    <h3>Nel Carrello</h3>
+                </div>
+                <div class="riepilogoSub">
+                    <p>Imponibile: <span>240,00€</span></p>
+                </div>
+                <div class="riepilogoIva">
+                    <p>Iva: <span>22%</span></p>
+                </div>
+                <div class="riepilogoTot">
+                    <p>Totale: <span>292,80€</span></p>
+                </div>
+            </div>
+            <div class="arrivo">
+                <h4>Arriva entro il giorno gio 17 </h4>
+            </div>
+            <div class="shoesCard">
+                <div class="shoesImg">
+                    <img src="immagini/scarpa_1.jpg" alt="imgScarpa">
+                </div>
+                <div class="shoesInfo">
+                    <span><strong>Nike Dunk Low</strong></span>
+                    <p>Modello nr: DD1873-102</p>
+                    <p>Colore: Olive</p>
+                    <p>Misura: 43</p>
+                    <p>Quantitià: 1</p>
+                    <p>Prezzo: 120.00€</p>
+                </div>
+            </div>
+            <div class="shoesCard">
+                <div class="shoesImg">
+                    <img src="immagini/scarpa_7.jpg" alt="imgScarpa">
+                </div>
+                <div class="shoesInfo">
+                    <span><strong>Nike Dunk Low</strong></span>
+                    <p>Modello nr: DD1873-103</p>
+                    <p>Colore: Black</p>
+                    <p>Misura: 44</p>
+                    <p>Quantitià: 1</p>
+                    <p>Prezzo: 120.00€</p>
+                </div>
+            </div>
+        </div>
+        <!-- inizio riepilogo  -->
+
+        <!-- Thank You Page  -->
+        <div class="thankYouPage">
+            <div class="thanks">
+                <div class="shipping">
+                    <h1>Acquisto completato!</h1>
+                    <p>Grazie per il tuo acquisto, ti invieremo a breve una mail di conferma e faremo del nostro meglio
+                        per
+                        spedire gli articoli il prima possibile
+                    </p>
+                    <img src="icone/verified.gif" alt="delivery">
+                </div>
+                <a href="#">
+                    <h3>Scopri come completare il tuo look</h3>
+                </a>
+                <div class="social">
+                    <div class="contatto">
+                        <h3>Rimaniamo in contatto</h3>
+                    </div>
+
+                    <div class="iconeSocial">
+                        <a href=""><img src="icone/twitter.png" alt="twitter"></a>
+                        <a href=""><img src="icone/instagram.png" alt="instagram"></a>
+                        <a href=""><img src="icone/tik-tok.png" alt="tik-tok"></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footerNav">
+            <div class="footerHelp">
+                <ul>
+                    <li><a href="#">Condizioni d'uso</a></li>
+                    <li><a href="#">Condizioni di vendita</a></li>
+                    <li><a href="#">Informazioni sulla privacy e sui cookie</a></li>
+                    <li><a href="#">Impostazioni sulla privacy e sui cookie</a></li>
+                </ul>
+                <p>© 2024 LabAir, Inc. Tutti i diritti riservati</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,270 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+
+/* Inzio stile header */
+header {
+    margin-bottom: 100px;
+}
+
+.help {
+    background-color: rgba(231, 227, 227, 0.205);
+}
+
+.help ul {
+    margin-top: 0;
+    list-style: none;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: end;
+
+}
+
+.help li {
+    margin: 5px;
+    border-right: 1px solid black;
+    padding-right: 5px;
+}
+
+.help ul:last-child {
+    margin: 0 50px;
+}
+
+.help a {
+    color: black;
+    text-decoration: none;
+    font-size: .8em;
+    margin: 5px;
+
+}
+
+.help a:hover {
+    color: rgba(0, 0, 0, 0.425);
+}
+
+.midNav {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row nowrap;
+    margin: 5px 50px;
+}
+
+.mainMenu ul {
+    list-style: none;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: end;
+}
+
+.mainMenu a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 5px;
+    padding: 0 10px;
+}
+
+.mainMenu a:hover {
+    text-decoration: underline;
+}
+
+.iconSection ul {
+    display: flex;
+    justify-content: end;
+    flex-flow: row nowrap;
+    list-style: none;
+}
+
+.iconSection a {
+    color: black;
+    text-decoration: none;
+    margin: 0 5px;
+    padding: 0 10px;
+}
+
+.botNav {
+    background-color: rgba(231, 227, 227, 0.205);
+    display: flex;
+    flex-direction: column;
+}
+
+.botNav p {
+    line-height: .7em;
+    font-size: .8em;
+    margin: 5px auto;
+}
+
+.hero-banner {
+    background-image: url(immagini/hero-banner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 75vh;
+    position: relative;
+
+}
+
+.promo {
+    min-height: 20%;
+    min-width: 10%;
+    position: absolute;
+    left: 10px;
+    bottom: 0;
+    margin: 10px;
+    color: white;
+}
+
+.promo button {
+    color: black;
+    font-weight: bold;
+    background-color: white;
+    border: 0;
+    border-radius: 30px;
+    height: 50px;
+    width: 100px;
+}
+
+.promo button:hover {
+
+    background-color: rgb(230, 230, 230);
+
+}
+
+/* fine stile header */
+
+
+/* Stile carosello */
+.slider-container1,
+.slider-container2 {
+    margin-bottom: 100px;
+}
+
+.titoloSlider {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 20px;
+}
+
+.card-box {
+    margin: 10px;
+    display: flex;
+    flex-flow: row nowrap;
+    overflow: auto;
+}
+
+.card {
+    margin: 0 10px;
+}
+
+.card img {
+    width: 50vh;
+}
+
+.info p {
+    line-height: .7em;
+}
+
+.info p:nth-child(2) {
+    color: grey;
+}
+
+.info p:nth-of-type(1),
+.info p:nth-of-type(3) {
+    font-weight: bold;
+}
+
+/* Fine Stile carosello */
+
+
+/* Inizio stile Scrollbar  */
+::-webkit-scrollbar {
+    height: 12px;
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgba(192, 202, 204, 0.747);
+    border-radius: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: grey;
+    border-radius: 12px;
+}
+
+/* Fine stile Scrollbar  */
+
+/* Inizio stile card Membership */
+.card-member {
+    position: relative;
+}
+
+.info-member {
+    min-height: 10%;
+    min-width: 20%;
+    position: absolute;
+    left: 10px;
+    bottom: 50px;
+    margin: 10px;
+    color: white;
+    line-height: .5em;
+}
+
+.info-member button {
+    color: black;
+    font-weight: bold;
+    background-color: white;
+    padding: 10px;
+    border-radius: 30px;
+    border: 0;
+}
+
+.info-member button:hover {
+    background-color: rgb(230, 230, 230);
+}
+
+/* Fine stile card Membership */
+
+/* Inizio stile Footer */
+.footerHelp {
+    background-color: rgba(231, 227, 227, 0.205);
+}
+
+.footerHelp p {
+    font-size: .8em;
+    text-align: center;
+}
+
+.footerHelp ul {
+    margin-bottom: 0;
+    list-style: none;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+
+}
+
+.footerHelp li {
+    margin: 0 5px;
+    border-right: 1px solid black;
+    padding-right: 5px;
+}
+
+.footerHelp a {
+    color: black;
+    text-decoration: none;
+    font-size: .8em;
+    margin: 5px;
+}
+
+.footerHelp a:hover {
+    color: rgba(0, 0, 0, 0.425);
+}
+
+/* Fine stile Footer */

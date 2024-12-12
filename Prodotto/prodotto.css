@@ -1,0 +1,402 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+/* Inzio stile header */
+header {
+    margin-bottom: 100px;
+}
+
+.help {
+    background-color: rgba(231, 227, 227, 0.205);
+}
+
+.help ul {
+    margin-top: 0;
+    list-style: none;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: end;
+}
+
+.help li {
+    margin: 5px;
+    border-right: 1px solid black;
+    padding-right: 5px;
+}
+
+.help ul:last-child {
+    margin: 0 50px;
+}
+
+.help a {
+    color: black;
+    text-decoration: none;
+    font-size: .8em;
+    margin: 5px;
+
+}
+
+.help a:hover {
+    color: rgba(0, 0, 0, 0.425);
+}
+
+.midNav {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row nowrap;
+    margin: 5px 50px;
+}
+
+.mainMenu ul {
+    list-style: none;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: end;
+}
+
+.mainMenu a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 5px;
+    padding: 0 10px;
+}
+
+.mainMenu a:hover {
+    text-decoration: underline;
+}
+
+.iconSection ul {
+    display: flex;
+    justify-content: end;
+    flex-flow: row nowrap;
+    list-style: none;
+}
+
+.iconSection a {
+    color: black;
+    text-decoration: none;
+    margin: 0 5px;
+    padding: 0 10px;
+}
+
+.botNav {
+    background-color: rgba(231, 227, 227, 0.205);
+    display: flex;
+    flex-direction: column;
+}
+
+.botNav p {
+    line-height: .7em;
+    font-size: .8em;
+    margin: 5px auto;
+}
+
+/* Fine stile header */
+
+/* INIZIO STILE CARRELLO */
+.carrello {
+    display: none;
+    position: relative;
+}
+
+.riepilogoCarrello {
+    display: none;
+    border: 1px solid rgb(224, 224, 224);
+    border-radius: 5px;
+    position: absolute;
+    right: 55px;
+    top: 0;
+    background-color: rgb(255, 255, 255);
+}
+
+.titoloCarrello {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 10px;
+}
+
+.titoloCarrello p {
+    font-size: .8em;
+    font-weight: bold;
+}
+
+.titoloCarrello button {
+    color: black;
+    background-color: white;
+    border: 0;
+    cursor: pointer;
+    height: 25px;
+    margin: 10px 0;
+}
+
+.titoloCarrello button:hover {
+    background-color: rgb(230, 230, 230);
+}
+
+.prodotto {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 10px;
+    min-height: 100px;
+}
+
+.descrizioneProdotto p {
+    margin: 15px;
+    font-size: .8em;
+    line-height: .8em;
+}
+
+.descrizioneProdotto p:nth-of-type(1),
+.descrizioneProdotto p:nth-of-type(4) {
+    font-weight: bold;
+}
+
+.immagineProdotto img {
+    height: 80px;
+    width: 80px;
+    margin: 15px 0;
+}
+
+.buttonCarrello {
+    margin: 10px 0;
+}
+
+.buttonCarrello button {
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 30px;
+    margin: 5px 10px;
+    border: 0.2px solid black;
+    cursor: pointer;
+}
+
+.buttonCarrello button a {
+    color: black;
+    text-decoration: none;
+}
+
+.buttonCarrello .btnCarrello {
+    background-color: white;
+}
+
+.buttonCarrello .btnCarrello:hover {
+    background-color: rgb(230, 230, 230);
+}
+
+.buttonCarrello .btnPagamento {
+    background-color: black;
+    color: white;
+}
+
+.buttonCarrello .btnPagamento a {
+    color: white;
+}
+
+.buttonCarrello .btnPagamento:hover {
+    background-color: rgba(0, 0, 0, 0.795)
+}
+
+/* FINE STILE CARRELLO */
+
+/* INIZIO STILE MAIN CONTENT  */
+.mainContainerScarpa {
+    display: flex;
+    justify-content: center;
+    /* border: 1px solid red; */
+    height: 65vh;
+    margin: 20px 0;
+}
+
+.sliderContainer {
+    width: 5%;
+    height: 100%;
+    margin: 10px 0;
+    /* border: 1px solid red; */
+    overflow: auto;
+}
+
+.itemSlideSlider img,
+.itemSlideSlider video {
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+    /* border: 1px solid red; */
+}
+
+
+.mainSliderContainer {
+    /* border: 1px solid red; */
+    position: relative;
+    margin: 10px;
+    width: 25%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.mainSliderContainer img {
+    width: 100%;
+    height: 100%;
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+}
+
+.mainSliderContainer img.visibile {
+    display: block;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+
+.containerMisure {
+    /* border: 1px solid red; */
+    max-height: 100%;
+    max-width: 350px;
+    margin: 10px 50px;
+}
+
+.titoloMisure {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.titoloMisure div a {
+    color: grey;
+    text-decoration: none;
+}
+
+.sceltaMisure {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.sceltaMisure .misure {
+    width: calc(96% / 3);
+    margin: 2px;
+}
+
+.sceltaMisure .misure button {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    border-radius: 5%;
+    border: 1px solid rgba(128, 128, 128, 0.295);
+    background-color: white;
+    cursor: pointer;
+}
+
+.sceltaMisure .misure button:hover {
+    background-color: rgb(230, 230, 230);
+
+}
+
+.misure button.selected {
+    background-color: black;
+    color: white;
+}
+
+
+
+.buttonScelta {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 25px 0;
+
+}
+
+.btnCarrello2 {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 5px;
+    font-weight: bold;
+    padding: 15px;
+    border-radius: 30px;
+    background-color: black;
+    cursor: pointer;
+}
+
+.btnCarrello2 a {
+    color: white;
+    text-decoration: none;
+}
+
+.btnCarrello2:hover {
+    background-color: rgba(0, 0, 0, 0.795)
+}
+
+.btnpreferiti {
+    width: 100%;
+    margin-bottom: 5px;
+    font-weight: bold;
+    padding: 15px;
+    border-radius: 30px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.btnpreferiti a {
+    color: black;
+    text-decoration: none;
+}
+
+.btnpreferiti:hover {
+    background-color: rgb(230, 230, 230);
+}
+
+/* FINE STILE MAIN CONTENT  */
+
+
+/* Inizio stile Footer */
+footer {
+    margin-top: 190px;
+}
+
+.footerHelp {
+    background-color: rgba(231, 227, 227, 0.205);
+}
+
+.footerHelp p {
+    font-size: .8em;
+    text-align: center;
+}
+
+.footerHelp ul {
+    margin-bottom: 0;
+    list-style: none;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+
+}
+
+.footerHelp li {
+    margin: 0 5px;
+    border-right: 1px solid black;
+    padding-right: 5px;
+}
+
+.footerHelp a {
+    color: black;
+    text-decoration: none;
+    font-size: .8em;
+    margin: 5px;
+}
+
+.footerHelp a:hover {
+    color: rgba(0, 0, 0, 0.425);
+}
+
+/* Fine stile Footer */

@@ -1,0 +1,358 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+.mainContainer {
+    /* border: 1px solid red; */
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+
+.titolo h1 {
+    display: block;
+    text-align: center;
+}
+
+/* visualizzazione primo form  */
+.primoStep {
+    display: block;
+}
+
+/* visualizzazione primo form  */
+
+.formContainer {
+    /* border: 1px solid red; */
+    max-width: 50%;
+    max-height: 100%;
+    margin-right: 30px;
+}
+
+.tipoSpedizione {
+    display: flex;
+}
+
+.tipoSpedizione button {
+    width: 50%;
+    height: 50px;
+    margin-right: 10px;
+    margin-bottom: 30px;
+    background-color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.514);
+}
+
+.tipoSpedizione button:last-child {
+    margin-right: 0;
+}
+
+.tipoSpedizione button img {
+    vertical-align: middle;
+}
+
+.tipoSpedizione button span {
+    margin: 0 10px;
+}
+
+.nomeEcognome {
+    display: flex;
+}
+
+#nome,
+#cognome {
+    width: 50%;
+    height: 50px;
+    margin-right: 10px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.514);
+}
+
+#cognome {
+    margin-right: 0;
+}
+
+#indirizzo {
+    width: 100%;
+    height: 50px;
+    margin-right: 10px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.514);
+}
+
+.CapCitta {
+    display: flex;
+}
+
+#cap,
+#citta,
+#paese {
+    width: calc(100%/3);
+    height: 50px;
+    margin-right: 10px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.514);
+}
+
+#paese {
+    margin-right: 0;
+}
+
+.mailTel {
+    display: flex;
+}
+
+#email,
+#telefono {
+    width: 50%;
+    height: 50px;
+    margin-right: 10px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.514);
+}
+
+#telefono {
+    margin-right: 0;
+}
+
+.button1 {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#submit1 {
+    font-weight: bold;
+    width: 20%;
+    height: 50px;
+    border-radius: 30px;
+    margin-bottom: 30px;
+    border: 0.2px solid rgba(0, 0, 0, 0.288);
+    cursor: pointer;
+}
+
+#submit1:enabled {
+    background-color: black;
+    color: white;
+}
+
+#submit1:hover:enabled {
+    background-color: rgba(0, 0, 0, 0.815);
+}
+
+/* visualizzazione secondo step  */
+.secondoStep {
+    display: none;
+}
+
+.voucher {
+    margin-bottom: 50px;
+}
+
+.metodoPagamento img {
+    vertical-align: middle;
+}
+
+.infoCarta {
+    display: flex;
+}
+
+#data,
+#cvv {
+    width: 25%;
+    height: 50px;
+    margin-right: 10px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.514);
+}
+
+#numeroCarta {
+    width: 55%;
+    height: 50px;
+    margin-right: 10px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.514);
+}
+
+#cvv {
+    margin-right: 0;
+}
+
+.button2 {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#submit2 {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    width: 20%;
+    height: 50px;
+    border-radius: 30px;
+    margin-bottom: 30px;
+    border: 0.2px solid rgba(0, 0, 0, 0.288);
+    cursor: pointer;
+}
+
+#submit2:hover {
+    background-color: rgba(0, 0, 0, 0.815);
+}
+
+/* visualizzazione secondo step  */
+
+/* Gestione colonna carrello  */
+.carrello {
+    /* border: 1px solid red; */
+    display: block;
+    max-width: 15%;
+    max-height: 100%;
+    margin-bottom: 100px;
+}
+
+.riepilogoSub span {
+    margin-left: 140px;
+}
+
+.riepilogoIva span {
+    margin-left: 220px;
+}
+
+.riepilogoTot {
+    border-bottom: 1px solid rgba(170, 170, 170, 0.342);
+    margin-bottom: 50px;
+}
+
+.riepilogoTot span {
+    margin-left: 170px;
+}
+
+.shoesCard {
+    display: flex;
+    /* border: 1px solid red; */
+    margin-bottom: 20px;
+}
+
+.shoesImg {
+    /* border: 1px solid red; */
+    max-width: 30%;
+    margin-right: 20px;
+}
+
+.shoesImg img {
+    max-width: 100%;
+}
+
+.shoesInfo p {
+    line-height: .8em;
+    color: grey;
+    font-size: 14px;
+}
+
+.thankYouPage {
+    display: none;
+    /* border: 1px solid red; */
+    max-width: 50%;
+}
+
+.shipping h1 {
+    text-align: center;
+    font-size: 52px;
+}
+
+.shipping p {
+    text-align: center;
+    font-size: 20px;
+}
+
+.shipping p {
+    text-align: center;
+    font-size: 20px;
+}
+
+.shipping img {
+    /* border: 1px solid red; */
+    margin: 0 250px;
+    width: 50%;
+}
+
+.thanks a {
+    text-decoration: none;
+}
+
+.thanks h3 {
+    text-align: center;
+    color: grey
+}
+
+.social {
+    text-align: center;
+    border: 1px groove grey;
+    border-radius: 20px;
+    width: 50%;
+    height: 130px;
+    margin: auto;
+}
+
+.social a {
+    margin: 0 30px;
+}
+
+.iconeSocial img {
+    height: 45px;
+}
+
+/* Stile thank you page  */
+
+/* Inizio stile Footer */
+footer {
+    margin-top: 190px;
+}
+
+.footerHelp {
+    background-color: rgba(231, 227, 227, 0.205);
+}
+
+.footerHelp p {
+    font-size: .8em;
+    text-align: center;
+}
+
+.footerHelp ul {
+    margin-bottom: 0;
+    list-style: none;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+
+}
+
+.footerHelp li {
+    margin: 0 5px;
+    border-right: 1px solid black;
+    padding-right: 5px;
+}
+
+.footerHelp a {
+    color: black;
+    text-decoration: none;
+    font-size: .8em;
+    margin: 5px;
+}
+
+.footerHelp a:hover {
+    color: rgba(0, 0, 0, 0.425);
+}
+
+/* Fine stile Footer */
